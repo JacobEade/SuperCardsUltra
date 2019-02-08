@@ -46,9 +46,9 @@
     * Type: functional
     * Summary: Load screen of revolving logo. Basic and Easy.
 8. _
-	* Name: card_sort
-	* Type: functional
-	* Summary: sorts the cards into a easy to read fashion
+  * Name: card_sort
+  * Type: functional
+  * Summary: sorts the cards into a easy to read fashion
 9. _
     * Name: hand_of_cards
     * Type: functional
@@ -62,17 +62,34 @@
     * Type: functional
     * Summary: Certain games call for the leader and needs to be pointed out and the player given exclusive players
 12. _
-	* Name: player_points
-	* Type: functional
-	* Summary: Tracks the points for the player or team and displays them to the players
+  * Name: player_points
+  * Type: functional
+  * Summary: Tracks the points for the player or team and displays them to the players
 13. _
-	* Name: display_cards
-	* Type: functional
-	* Summary: renders the cards to the screen
+  * Name: display_cards
+  * Type: functional
+  * Summary: renders the cards to the screen
 14. _
-	* Name: play_cards
-	* Type: functional
-	* Summary: allows players to play cards
+  * Name: play_cards
+  * Type: functional
+  * Summary: allows players to play cards
+15. _
+  * Name: net_connect
+  * Type: risk
+  * Summary: The network may disallow any computers to connect to one another
+16. _
+  * Name: net_keep_connect
+  * Type: risk
+  * Summary: The network may drop the player and we would have to deal with a non-reponsive connetection
+17. _
+  * Name: kick_player
+  * Type: functional
+  * Summary: THe game should kick the player that is slow to respond
+18. _
+  * Name: vote_kick_player
+  * Type: functional
+  * Summary: The players can raise a vote to kick a player that is being rude
+
 
 [//]: # (Each requirement should be given one of these types: functional, constraint, risk)
 @222
