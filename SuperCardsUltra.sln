@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SuperCardsUltra", "SuperCar
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documents", "Documents", "{94C151D4-7DB1-48CD-837C-FF116991DAAF}"
 	ProjectSection(SolutionItems) = preProject
-		SuperCardsUltra\Requirements.md = SuperCardsUltra\Requirements.md
+		Documents\Requirements.md = Documents\Requirements.md
 	EndProjectSection
 EndProject
 Global
