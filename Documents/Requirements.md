@@ -89,7 +89,29 @@
   * Name: vote_kick_player
   * Type: functional
   * Summary: The players can raise a vote to kick a player that is being rude
-
+19. _
+  * Name: random_rules
+  * Type: functional
+  * Summary: design a system of a set of rules randomly assigned to random cards
+20. _
+  * Name: hold_em_display
+  * Type: functional
+  * Summary: display to the table the 3 first round cards, 1 second round, and the final card to the table when playing texholdem
+20. _
+  * Name: double_single_blind
+  * Type: functional
+  * Summary: display chip to the screen indicating who is paying blinds and double blinds. Then include them actually paying it.
+21. _
+  * Name: place_bet
+  * Type: functional
+  * Summary: animate chips going into the center pot when the user places a bet.
+22. _
+  * Name: turn_visual
+  * Type: functional
+  * Summary: animate the passing of who is taking their turn.
+23. _
+  * Name: table_cards_blackjack_display
+  * Type: functional
+  * Summary: A players blackjack hand should have 1 card face up when displayed on the table
 
 [//]: # (Each requirement should be given one of these types: functional, constraint, risk)
-@222
