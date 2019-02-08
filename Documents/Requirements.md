@@ -97,29 +97,35 @@
 	* Summary: The game should kick the player that is slow to respond
 
 18. _
-  * Name: vote_kick_player
-  * Type: functional
-  * Summary: The players can raise a vote to kick a player that is being rude
+	* Name: vote_kick_player
+	* Type: functional
+	* Summary: The players can raise a vote to kick a player that is being rude
+
 19. _
-  * Name: random_rules
-  * Type: functional
-  * Summary: design a system of a set of rules randomly assigned to random cards
+	* Name: random_rules
+	* Type: functional
+	* Summary: design a system of a set of rules randomly assigned to random cards
+
 20. _
-  * Name: hold_em_display
-  * Type: functional
-  * Summary: display to the table the 3 first round cards, 1 second round, and the final card to the table when playing texholdem
+	* Name: hold_em_display
+	* Type: functional
+	* Summary: display to the table the 3 first round cards, 1 second round, and the final card to the table when playing texholdem
+
 20. _
-  * Name: double_single_blind
-  * Type: functional
-  * Summary: display chip to the screen indicating who is paying blinds and double blinds. Then include them actually paying it.
+	* Name: double_single_blind
+	* Type: functional
+	* Summary: display chip to the screen indicating who is paying blinds and double blinds. Then include them actually paying it.
+
 22. _
-  * Name: turn_visual
-  * Type: functional
-  * Summary: animate the passing of who is taking their turn.
+	* Name: turn_visual
+	* Type: functional
+	* Summary: animate the passing of who is taking their turn.
+
 23. _
-  * Name: table_cards_blackjack_display
-  * Type: functional
-  * Summary: A players blackjack hand should have 1 card face up when displayed on the table
+	* Name: table_cards_blackjack_display
+	* Type: functional
+	* Summary: A players blackjack hand should have 1 card face up when displayed on the table
+
 24. _
 	* Name: player_bids
 	* Type: functional
@@ -144,5 +150,3 @@
 	* Name: cards_deal
 	* Type: functional
 	* Summary: deals cards to the players in the appropiate way for the chosen game
-
-[//]: # (Each requirement should be given one of these types: functional, constraint, risk)
