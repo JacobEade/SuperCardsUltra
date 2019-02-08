@@ -1,18 +1,22 @@
-#SuperCardsUltra Requirements
+# SuperCardsUltra Requirements
 
-##Team members
-*Jacob Eade
-*Harrison Welch
+## Team members
 
-##Purpose
-SuperCardsUltra will allow users to play select card games with their friends
+* Jacob Eade
+* Harrison Welch
 
-##Requirements
+## Purpose
 
-1. *Name: *
-   *Type: *
-   *Summary: *
+* SuperCardsUltra will allow users to play select card games with their friends
 
-1. *Name: *
-   *Type: *
-   *Summary: *
+## Requirements
+
+1. Part 1
+    1. Name:
+    2. Type:
+    3. Summary:
+
+2. Part 2
+    1. Name:
+    2. Type:
+    3. Summary:
