@@ -94,7 +94,7 @@
 17. _
 	* Name: kick_player
 	* Type: functional
-	* Summary: THe game should kick the player that is slow to respond
+	* Summary: The game should kick the player that is slow to respond
 
 18. _
 	* Name: vote_kick_player
@@ -120,5 +120,8 @@
 	* Name: player_chat
 	* Type: functional
 	* Summary: allows players to chat within the lobby
-[//]: # (Each requirement should be given one of these types: functional, constraint, risk)
-@222
+
+23. _
+	* Name: cards_deal
+	* Type: functional
+	* Summary: deals cards to the players in the appropiate way for the chosen game
