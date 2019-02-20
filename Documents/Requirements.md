@@ -19,7 +19,7 @@
     * Type: functional
     * Summary: There will be a simple load screen with a logo.
 
-2._
+2. _
 	* Name: login_screen
 	* Type: functional
 	* Summary: There will be a login screen for players.
