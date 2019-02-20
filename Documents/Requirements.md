@@ -7,7 +7,7 @@
 
 ## Purpose
 
-* SuperCardsUltra will allow users to play card games with their friends.
+* SuperCardsUltra will allow users to play card games with their friends. The Card games that will be implemented are Blackjack, Texas Hold Em, Pedro and Mao.
 
 ## Requirements
 
@@ -51,13 +51,14 @@
 	* Summary: Players will be able to login to a account.
 
 3. _
-	* Name: TBD something to do with security of account
+	* Name: account_logout
+	* Type: functional
+	* Summary: Players will be able to logout of their account.
 
-4._
+4. _
 	* Name: account_career
 	* Type: functional
 	* Summary: Players will be able to track their career wins and total games with their accounts.
-
 
 ### Network
 1. _
@@ -74,12 +75,12 @@
 1. _
     * Name: lobby_system
     * Type: functional
-    * Summary: The Player jumps into a lobby with other players
+    * Summary: The lobby will be where players connect to eachother and decide which game to play
 
 2. _
     * Name: num_players
     * Type: constraint
-    * Summary: Limit to 4 players
+    * Summary: The number of players allowed in each lobby will be restricted to 4.
 
 3. _
     * Name: voting_on_game
@@ -99,13 +100,13 @@
 6. _
 	* Name: player_chat
 	* Type: functional
-	* Summary: allows players to chat within the lobby
+	* Summary: Players will be able to chat to eachother.
 
 ### General game systems
 1. _
 	* Name: card_sort
 	* Type: functional
-	* Summary: sorts the cards into a easy to read fashion
+	* Summary: The cards will be automatically sorted for the readabillity.
 
 2. _
     * Name: hand_of_cards
@@ -115,27 +116,27 @@
 3. _
 	* Name: display_cards
 	* Type: functional
-	* Summary: renders the cards to the screen
+	* Summary: Displays the cards to the screen.
 
 4. _
 	* Name: cards_deal
 	* Type: functional
-	* Summary: deals cards to the players in the appropiate way for the chosen game
+	* Summary: Deals cards to players according to the rules of the games.
 
 5. _
 	* Name: play_cards
 	* Type: functional
-	* Summary: allows players to play cards	
+	* Summary: Players will be able to play cads.
 
 6. _
 	* Name: player_points
 	* Type: functional
-	* Summary: Tracks the points for the player or team and displays them to the players
+	* Summary: Points will be tracked and displayed to the players.
 
 7. _
     * Name: player_notes
     * Type: functional
-    * Summary: notes the player can take about the current game allow the player to remember many complex things
+    * Summary: Players will be able to take notes during games.
 
 8. _
     * Name: player_dealer
@@ -145,7 +146,7 @@
 9. _
 	* Name: turn_visual
 	* Type: functional
-	* Summary: animate the passing of who is taking their turn.
+	* Summary: Players will have their turns animated.
 
 10. _
 	* Name: player_bids
