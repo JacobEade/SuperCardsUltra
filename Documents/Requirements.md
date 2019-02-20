@@ -12,35 +12,52 @@
 ## Requirements
 
 ### Menu and interface
+
+#### General Screens
 1. _
     * Name: load_screen
     * Type: functional
-    * Summary: Load screen of revolving logo. Basic and Easy.
+    * Summary: There will be a simple load screen with a logo.
 
-2. _
-	* Name: account_creation
+2._
+	* Name: login_screen
 	* Type: functional
-	* Summary: allows players to make a new account
+	* Summary: There will be a login screen for players.
 
 3. _
-	* Name: account_login
-	* Type: functional
-	* Summary: allows players to login
-
-4. _
     * Name: home_screen
     * Type: functional
-    * Summary: Enable the player to enter the lobby
+    * Summary: There will be a home screen where players can directly acess the other screens.
 
-5. _
+4. _
     * Name: about_screen
     * Type: functional
-    * Summary: Describe the application, copyright notice, and other information
+    * Summary: There will be an about screen containing a general descrition of the application.
 
-6. _
+5. _
     * Name: settings_screen
     * Type: functional
-    * Summary: Setting the font, font-size, sound-mixing levels, color-blind mode, game-board skins/colors.
+    * Summary: There will be a settings screen. Where users can custimize the cards, as well as some other settings.
+
+#### Accounts
+1. _
+	* Name: account_creation
+	* Type: functional
+	* Summary: Players will be able to creat an account.
+
+2. _
+	* Name: account_login
+	* Type: functional
+	* Summary: Players will be able to login to a account.
+
+3. _
+	* Name: TBD something to do with security of account
+
+4._
+	* Name: account_career
+	* Type: functional
+	* Summary: Players will be able to track their career wins and total games with their accounts.
+
 
 ### Network
 1. _
