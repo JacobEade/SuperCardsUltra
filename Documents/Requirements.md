@@ -15,21 +15,26 @@
 
 #### User Interface
 
+3. _
+    * Name: home_screen
+    * Type: functional
+    * Summary: This is screen is the first page of the application when loaded up. It shows the title of the application 'SuperCardsUltra' and buttons to migrate to other screens in the game.
+
 1. _
     * Name: load_screen
     * Type: functional
-    * Summary: There will be a simple load screen with a logo.
+    * Summary: There will be a simple load screen with a logo spinning in circles centered in the screen. Below the logo should show a progress bar of the load.
 
 2. _
     * Name: login_screen
     * Type: functional
-    * Summary: There will be a login screen for players.
+    * Summary: A login screen will be seen by the user for logging into his or her account. It will feature a Username and a Password text feild. There will also be a button to create an account which will take you to the create an account screen
 
 3. _
-    * Name: home_screen
+    * Name: login_screen
     * Type: functional
-    * Summary: There will be a home screen where players can directly acess the other screens.
-
+    * Summary: Similar to creating an account this will feature an account creation screen. This will be a screen centered modal that features username, email, password, and confirm password text fields.
+    
 4. _
     * Name: about_screen
     * Type: functional
@@ -38,7 +43,12 @@
 5. _
     * Name: settings_screen
     * Type: functional
-    * Summary: There will be a settings screen. Where users can custimize the cards, as well as some other settings.
+    * Summary: There will be a settings screen. Where users can customize the card back texture/color, the board texture/color
+
+1. _
+    * Name: account_view
+    * Type: functional
+    * Summary: From the main screen the user can select to view their account. This moves them to a screen to see items such as wins, win percentage per game, last game played results, favorite game based on play time and other card game items.
 
 #### User Account System
 
@@ -62,6 +72,11 @@
     * Type: functional
     * Summary: Players will be able to track their career wins and total games with their accounts.
 
+1. _
+    * Name: username_dupe_check
+    * Type: functional
+    * Summary: The account creation screen, upon submit there will be a check in the database for a duplicate of that username and if it should exist then
+
 ### Network
 
 1. _
@@ -72,7 +87,7 @@
 2. _
     * Name: net_keep_connect
     * Type: risk
-    * Summary: The network may drop the player and we would have to deal with a non-reponsive connection.
+    * Summary: The network may drop the player and we would have to deal with a non-reponsive connection. The connection could be lost at any point during the game, lobby, server finding, or other processes.
 
 ### Lobby and social
 
@@ -111,7 +126,7 @@
 1. _
     * Name: card_sort
     * Type: functional
-    * Summary: The cards will be automatically sorted for the readabillity.
+    * Summary: Each time a user picks up a card inside the game the hand sorts it into logical order. 2-10 then Jack, Queen, King, and Ace. This system will not shuffle the hidden card in BlackJack; that card will remain far left in the users hand
 
 2. _
     * Name: hand_of_cards
