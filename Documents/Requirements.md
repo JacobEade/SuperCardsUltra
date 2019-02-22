@@ -127,51 +127,66 @@
     * Name: card_sort
     * Type: functional
     * Summary: Each time a user picks up a card inside the game the hand sorts it into logical order. 2-10 then Jack, Queen, King, and Ace. This system will not shuffle the hidden card in BlackJack; that card will remain far left in the users hand
-
+1. _
+    * Name: in_game_menu
+    * Type: functional
+    * Summary: The User will be able to click a button in the top left of the screen to open an in game menu. It will open a column from the left hand side of the screen. All options in the menu will be displayed vertically. Options about the game will be displayed here.
+1. _
+    * Name: menu_leave_game
+    * Type: functional
+    * Summary: In the side bar menu there will be a button to leave the current game the user is in. Clicking this button will result in the user leaving the game.
 2. _
     * Name: hand_of_cards
     * Type: functional
-    * Summary: The player's cards in hand. Using the mouse scroll wheel the player can scroll through cards in the user's hand
-
+    * Summary: The player's cards in hand. Using the mouse scroll wheel the player can scroll through cards in the user's hand.
 3. _
     * Name: render_card
     * Type: functional
     * Summary: Each card in the players hand shall be images of that specific card.
-
 4. _
     * Name: cards_deal
     * Type: functional
     * Summary: Deals cards to players according to the rules of the games.
-
 5. _
     * Name: play_cards
     * Type: functional
     * Summary: Players will be able to play cads.
-
 6. _
     * Name: player_points
     * Type: functional
     * Summary: Points will be tracked and displayed to the players.
-
 7. _
     * Name: player_notes
     * Type: functional
     * Summary: Players will be able to take notes during games.
-
 8. _
     * Name: player_dealer
     * Type: functional
     * Summary: Certain games call for the leader and needs to be pointed out and the player given exclusive players
-
 9. _
     * Name: turn_visual
     * Type: functional
     * Summary: A dark black indicator on the game board will point to the player whose turn it is. This indicator will rotate in turn in the direction of current play order to the next player. Repeat until end of game.
-
-10. _
-    * Name: player_bids
+1. _
+    * Name: bank_display
     * Type: functional
-    * Summary: Players will be able to make bids appropiate to the game. Animate the chips going into the center pot when the user places a bet.
+    * Summary: On the THE board there will be a box dedicated to displaying the users total money. This box will be place directly in front of the users hand on the game board
+1. __
+    * Name: animate_bid
+    * Type: functional
+    * Summary: animate (moving objects) a bid being placed onto the current pot right of the cards being played down.
+1. __
+    * Name: animate_win
+    * Type: functional
+    * Summary: animate a collection of chips moving towards the the winner(s) bank section of the screen. In the case of split pot, this animation will play twice in both directions.
+2. _
+    * Name: double_single_blind_display
+    * Type: functional
+    * Summary: display chip to the screen indicating who is paying blinds and double blinds.
+2. _
+    * Name: center_pot
+    * Type: functional
+    * Summary: Left of any centered card display there will be a pot to bet money
 
 ### Specific Game Systems
 
@@ -182,17 +197,20 @@
     * Type: functional
     * Summary: A players blackjack hand should have 1 card face up when displayed on the table
 
-#### Texas Hold Em
+#### Texas Hold Em (THE)
 
+1. _
+    * Name: hold_em_opening screen
+    * Type: functional
+    * Summary: Upon starting a game of Texas-Hold-Em, the randomly chosen host can choose to enable different options such as enabling or disabling blinds, initial starting cash, enabling or disabling ALL-INS, maximum or minimum bets.
 1. _
     * Name: hold_em_display
     * Type: functional
     * Summary: display to the table the 3 first round cards, 1 second round, and the final card to the table when playing texholdem
-
-2. _
-    * Name: double_single_blind
+1. _
+    * Name: hold_em_deal
     * Type: functional
-    * Summary: display chip to the screen indicating who is paying blinds and double blinds. Then include them actually paying it.
+    * Summary: users start with a hand of 2 cards in a game of THE.
 
 #### Pedro
 
@@ -204,9 +222,17 @@
 #### Mao
 
 1. _
+    * Name: mao_deal
+    * Type: functional
+    * Summary: Users start with a hand of 7 cards by default
+1. _
     * Name: random_rules
     * Type: functional
     * Summary: A finite set of 10 rules for cards to apply secretly to the game shall be used
+2. _
+    * Name: mao_opening_screen
+    * Type: functional
+    * Summary: Upon starting a game of Mao the 'Host' of a game (randomly decided) sets up the game. This set up screen will involve either randomly assigning cards values or the Host can pick the rules assigned to each card. The screen will have the Club suit of cards set on screen one for each value totaling 13 different cards. The Host can then select from a different drop down of each card it's rule. There is also a random button that will push a random value into each card. Rules cannot be used more than once.
 
 ##### Random Rules for Mao
 
@@ -247,6 +273,6 @@
     * Type: functional
     * Summary: The user that plays a specific card must swap hands with a player of their choosing
 10. _
-    * Name: draw_new_hand 
+    * Name: draw_new_hand
     * Type: functional
     * Summary: The user that plays a specific card must discard all of their cards onto the draw pile. Shuffle the deck and draw a new set of the same number of cards discarded.
