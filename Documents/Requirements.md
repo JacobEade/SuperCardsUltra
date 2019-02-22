@@ -156,7 +156,7 @@
 10. _
     * Name: player_bids
     * Type: functional
-    * Summary: allows sthe players to make bids appropiate to the game. animate chips going into the center pot when the user places a bet.
+    * Summary: Players will be able to make bids appropiate to the game. Animate the chips going into the center pot when the user places a bet.
 
 ### Specific Game Systems
 
@@ -181,9 +181,14 @@
 
 #### Pedro
 
+1. _
+	* Name: card_hierarchy
+	* Type: functional
+	* Summary: There will be a system in place that determines where the played cards lay in the hierarchy.
+
 #### Mao
 
 1. _
     * Name: random_rules
     * Type: functional
-    * Summary: There will be a systenm of reandom rules
+    * Summary: There will be a system to choose the rules randomly from a set of predetermined rules.
