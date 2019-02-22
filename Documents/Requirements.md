@@ -67,24 +67,24 @@
 1. _
     * Name: net_connect
     * Type: risk
-    * Summary: The network may disallow any computers to connect to one another
+    * Summary: The network may disallow any computers to connect to one another. Networking is the not the developers strong suit. The network used to play the game may ban the sending of packer
 
 2. _
     * Name: net_keep_connect
     * Type: risk
-    * Summary: The network may drop the player and we would have to deal with a non-reponsive connetection
+    * Summary: The network may drop the player and we would have to deal with a non-reponsive connection.
 
 ### Lobby and social
 
 1. _
     * Name: lobby_system
     * Type: functional
-    * Summary: The lobby will be where players connect to eachother and decide which game to play
+    * Summary: Upon loading into the game and selecting a server the players are placed into a lobby amongst all the players. The lobby systems is a centered list of the number of players
 
 2. _
     * Name: num_players
     * Type: constraint
-    * Summary: The number of players allowed in each lobby will be restricted to 4.
+    * Summary: The number of players allowed in each lobby will be restricted to 4. This is done for the initial design of the game
 
 3. _
     * Name: voting_on_game
@@ -99,12 +99,12 @@
 5. _
     * Name: vote_kick_player
     * Type: functional
-    * Summary: The players can raise a vote to kick a player that is being rude
+    * Summary: From the menu button in the top left the user can press "Vote Kick". The user can then select a player from a screen centered (vertical and horizontal). Then the a notification to each player is sent to each player center screened as 'Don't you want to kick $name$'? and they select yes, no, or a close in the top right. All inputs when recieving this notification will be disabled and re-enabled when the user selects one of the aforementioned options. A 'Yes' majority is required to kick a person. A 'No' ends up with nothing happing. A tie results in a 'No' vote. A close counts as abstaining and will not count toward either 'yes' nor 'no'.
 
 6. _
     * Name: player_chat
     * Type: functional
-    * Summary: Players will be able to chat to eachother.
+    * Summary: Towards the bottom left corner there will be a chat window. It will be default minimized about 5% vertical height and 30% horizontal width Pressing 'U' on the keyboard shall open the chat to take 40% vertical; horizontal remains the same.
 
 ### General game systems
 
