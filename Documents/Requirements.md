@@ -94,7 +94,7 @@
 4. _
     * Name: kick_player
     * Type: functional
-    * Summary: The game should kick the player that is slow to respond
+    * Summary: Games should track the player's time between actions and should this counter pass 60 seconds then the player will be automatically kicked from the game. That players position on the board will "grey out" or become darker than other players positions
 
 5. _
     * Name: vote_kick_player
@@ -151,7 +151,7 @@
 9. _
     * Name: turn_visual
     * Type: functional
-    * Summary: Players will have their turns animated.
+    * Summary: A dark black indicator on the game board will point to the player whose turn it is. This indicator will rotate in turn in the direction of current play order to the next player. Repeat until end of game.
 
 10. _
     * Name: player_bids
@@ -186,4 +186,4 @@
 1. _
     * Name: random_rules
     * Type: functional
-    * Summary: design a system of a set of rules randomly assigned to random cards
+    * Summary: There will be a systenm of reandom rules
