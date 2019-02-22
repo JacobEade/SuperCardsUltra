@@ -131,12 +131,12 @@
 2. _
     * Name: hand_of_cards
     * Type: functional
-    * Summary: The player's cards in hand. Needs the ability to show cards to player. Auto-sorts the hand as cards come in.
+    * Summary: The player's cards in hand. Using the mouse scroll wheel the player can scroll through cards in the user's hand
 
 3. _
-    * Name: display_cards
+    * Name: render_card
     * Type: functional
-    * Summary: Displays the cards to the screen.
+    * Summary: Each card in the players hand shall be images of that specific card.
 
 4. _
     * Name: cards_deal
@@ -197,13 +197,56 @@
 #### Pedro
 
 1. _
-	* Name: card_hierarchy
-	* Type: functional
-	* Summary: There will be a system in place that determines where the played cards lay in the hierarchy.
+    * Name: card_hierarchy
+    * Type: functional
+    * Summary: There will be a system in place that determines where the played cards lay in the hierarchy.
 
 #### Mao
 
 1. _
     * Name: random_rules
     * Type: functional
-    * Summary: There will be a system to choose the rules randomly from a set of predetermined rules.
+    * Summary: A finite set of 10 rules for cards to apply secretly to the game shall be used
+
+##### Random Rules for Mao
+
+1. _
+    * Name: reverse_turn_direction
+    * Type: functional
+    * Summary: A card played rule where The order of play shall reverse direction. If the turn of play was going to the left it shall now go to the right and if it was right it should now go left.
+2. _
+    * Name: draw_two
+    * Type: functional
+    * Summary: A card played rule where The following user in the turn order draws two cards and skips their turn.
+3. _
+    * Name: skip_next_turn
+    * Type: functional
+    * Summary: A card played rule where The following user in the turn order skips their turn.
+4. _
+    * Name: leap_to_next_player
+    * Type: functional
+    * Summary: A card played rule where The next two players in turn order skip their turn
+5. _
+    * Name: leap_to_next_player
+    * Type: functional
+    * Summary: A card played rule where The next two players in turn order skip their turn
+6. _
+    * Name: leap_to_next_player
+    * Type: functional
+    * Summary: A card played rule where The next two players in turn order skip their turn. Play resumes on the third user in turn order.
+7. _
+    * Name: type_phrase_password
+    * Type: functional
+    * Summary: The user that plays a specific card (secret assignment) has to type the phrase 'password' in chat to enable the game to go forward.
+8. _
+    * Name: discard_one_card
+    * Type: functional
+    * Summary: The user that plays a specific card must discard one of their cards of their choosing onto the pile.
+9. _
+    * Name: swap_hands
+    * Type: functional
+    * Summary: The user that plays a specific card must swap hands with a player of their choosing
+10. _
+    * Name: draw_new_hand 
+    * Type: functional
+    * Summary: The user that plays a specific card must discard all of their cards onto the draw pile. Shuffle the deck and draw a new set of the same number of cards discarded.

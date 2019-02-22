@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Requirements.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: "Segoe WPC", "Segoe UI", "SFUIText-Light", "HelveticaNeue-Light", sans-serif, "Droid Sans Fallback";
+	font-size: 14px;
+	padding: 0 12px;
+	line-height: 22px;
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	color: #4080D0;
+	text-decoration: none;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+h1 code,
+h2 code,
+h3 code,
+h4 code,
+h5 code,
+h6 code {
+	font-size: inherit;
+	line-height: auto;
+}
+
+a:hover {
+	color: #4080D0;
+	text-decoration: underline;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left: 5px solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 14px;
+	line-height: 19px;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+.mac code {
+	font-size: 12px;
+	line-height: 18px;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+/** Theming */
+
+.vscode-light,
+.vscode-light pre code {
+	color: rgb(30, 30, 30);
+}
+
+.vscode-dark,
+.vscode-dark pre code {
+	color: #DDD;
+}
+
+.vscode-high-contrast,
+.vscode-high-contrast pre code {
+	color: white;
+}
+
+.vscode-light code {
+	color: #A31515;
+}
+
+.vscode-dark code {
+	color: #D7BA7D;
+}
+
+.vscode-light pre:not(.hljs),
+.vscode-light code > div {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre:not(.hljs),
+.vscode-dark code > div {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre:not(.hljs),
+.vscode-high-contrast code > div {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+.vscode-light blockquote,
+.vscode-dark blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.vscode-high-contrast blockquote {
+	background: transparent;
+	border-color: #fff;
+}
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family:  "Meiryo", "Segoe WPC", "Segoe UI", "SFUIText-Light", "HelveticaNeue-Light", sans-serif, "Droid Sans Fallback";
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+</head>
+<body>
+<h1 id="supercardsultra-requirements">SuperCardsUltra Requirements</h1>
+<h2 id="team-members">Team members</h2>
+<ul>
+<li>Jacob Eade</li>
+<li>Harrison Welch</li>
+</ul>
+<h2 id="purpose">Purpose</h2>
+<ul>
+<li>SuperCardsUltra will allow users to play card games with their friends. The Card games that will be implemented are Blackjack, Texas Hold Em, Pedro, and Mao.</li>
+</ul>
+<h2 id="requirements">Requirements</h2>
+<h3 id="menu-and-interface">Menu and interface</h3>
+<h4 id="user-interface">User Interface</h4>
+<ol start="3">
+<li>
+<p>_</p>
+<ul>
+<li>Name: home_screen</li>
+<li>Type: functional</li>
+<li>Summary: This is screen is the first page of the application when loaded up. It shows the title of the application 'SuperCardsUltra' and buttons to migrate to other screens in the game.</li>
+</ul>
+</li>
+<li>
+<p>_</p>
+<ul>
+<li>Name: load_screen</li>
+<li>Type: functional</li>
+<li>Summary: There will be a simple load screen with a logo spinning in circles centered in the screen. Below the logo should show a progress bar of the load.</li>
+</ul>
+</li>
+<li>
+<p>_</p>
+<ul>
+<li>Name: login_screen</li>
+<li>Type: functional</li>
+<li>Summary: A login screen will be seen by the user for logging into his or her account. It will feature a Username and a Password text feild. There will also be a button to create an account which will take you to the create an account screen</li>
+</ul>
+</li>
+<li>
+<p>_</p>
+<ul>
+<li>Name: login_screen</li>
+<li>Type: functional</li>
+<li>Summary: Similar to creating an account this will feature an account creation screen. This will be a screen centered modal that features username, email, password, and confirm password text fields.</li>
+</ul>
+</li>
+<li>
+<p>_</p>
+<ul>
+<li>Name: about_screen</li>
+<li>Type: functional</li>
+<li>Summary: There will be an about screen containing a general descrition of the application.</li>
+</ul>
+</li>
+<li>
+<p>_</p>
+<ul>
+<li>Name: settings_screen</li>
+<li>Type: functional</li>
+<li>Summary: There will be a settings screen. Where users can customize the card back texture/color, the board texture/color</li>
+</ul>
+</li>
+<li>
+<p>_</p>
+<ul>
+<li>Name: account_view</li>
+<li>Type: functional</li>
+<li>Summary: From the main screen the user can select to view their account. This moves them to a screen to see items such as wins, win percentage per game, last game played results, favorite game based on play time and other card game items.</li>
+</ul>
+</li>
+</ol>
+<h4 id="user-account-system">User Account System</h4>
+<ol>
+<li>
+<p>_</p>
+<ul>
+<li>Name: account_creation</li>
+<li>Type: functional</li>
+<li>Summary: Players will be able to creat an account.</li>
+</ul>
+</li>
+<li>
+<p>_</p>
+<ul>
+<li>Name: account_login</li>
+<li>Type: functional</li>
+<li>Summary: Players will be able to login to a account.</li>
+</ul>
+</li>
+<li>
+<p>_</p>
+<ul>
+<li>Name: account_logout</li>
+<li>Type: functional</li>
+<li>Summary: Players will be able to logout of their account.</li>
+</ul>
+</li>
+<li>
+<p>_</p>
+<ul>
+<li>Name: account_career</li>
+<li>Type: functional</li>
+<li>Summary: Players will be able to track their career wins and total games with their accounts.</li>
+</ul>
+</li>
+<li>
+<p>_</p>
+<ul>
+<li>Name: username_dupe_check</li>
+<li>Type: functional</li>
+<li>Summary: The account creation screen, upon submit there will be a check in the database for a duplicate of that username and if it should exist then</li>
+</ul>
+</li>
+</ol>
+<h3 id="network">Network</h3>
+<ol>
+<li>
+<p>_</p>
+<ul>
+<li>Name: net_connect</li>
+<li>Type: risk</li>
+<li>Summary: The network may disallow any computers to connect to one another. Networking is the not the developers strong suit. The network used to play the game may ban the sending of packer</li>
+</ul>
+</li>
+<li>
+<p>_</p>
+<ul>
+<li>Name: net_keep_connect</li>
+<li>Type: risk</li>
+<li>Summary: The network may drop the player and we would have to deal with a non-reponsive connection. The connection could be lost at any point during the game, lobby, server finding, or other processes.</li>
+</ul>
+</li>
+</ol>
+<h3 id="lobby-and-social">Lobby and social</h3>
+<ol>
+<li>
+<p>_</p>
+<ul>
+<li>Name: lobby_system</li>
+<li>Type: functional</li>
+<li>Summary: Upon loading into the game and selecting a server the players are placed into a lobby amongst all the players. The lobby systems is a centered list of the number of players</li>
+</ul>
+</li>
+<li>
+<p>_</p>
+<ul>
+<li>Name: num_players</li>
+<li>Type: constraint</li>
+<li>Summary: The number of players allowed in each lobby will be restricted to 4. This is done for the initial design of the game</li>
+</ul>
+</li>
+<li>
+<p>_</p>
+<ul>
+<li>Name: voting_on_game</li>
+<li>Type: functional</li>
+<li>Summary: Players can vote on what game to play with the plurality of the votes winning. Each vote lasts 30 seconds. A pop-up is displayed for the user to scroll through games and click to vote.</li>
+</ul>
+</li>
+<li>
+<p>_</p>
+<ul>
+<li>Name: kick_player</li>
+<li>Type: functional</li>
+<li>Summary: Games should track the player's time between actions and should this counter pass 60 seconds then the player will be automatically kicked from the game. That players position on the board will &quot;grey out&quot; or become darker than other players positions</li>
+</ul>
+</li>
+<li>
+<p>_</p>
+<ul>
+<li>Name: vote_kick_player</li>
+<li>Type: functional</li>
+<li>Summary: From the menu button in the top left the user can press &quot;Vote Kick&quot;. The user can then select a player from a screen centered (vertical and horizontal). Then the a notification to each player is sent to each player center screened as 'Don't you want to kick $name$'? and they select yes, no, or a close in the top right. All inputs when recieving this notification will be disabled and re-enabled when the user selects one of the aforementioned options. A 'Yes' majority is required to kick a person. A 'No' ends up with nothing happing. A tie results in a 'No' vote. A close counts as abstaining and will not count toward either 'yes' nor 'no'.</li>
+</ul>
+</li>
+<li>
+<p>_</p>
+<ul>
+<li>Name: player_chat</li>
+<li>Type: functional</li>
+<li>Summary: Towards the bottom left corner there will be a chat window. It will be default minimized about 5% vertical height and 30% horizontal width Pressing 'U' on the keyboard shall open the chat to take 40% vertical; horizontal remains the same.</li>
+</ul>
+</li>
+</ol>
+<h3 id="general-game-systems">General game systems</h3>
+<ol>
+<li>
+<p>_</p>
+<ul>
+<li>Name: card_sort</li>
+<li>Type: functional</li>
+<li>Summary: Each time a user picks up a card inside the game the hand sorts it into logical order. 2-10 then Jack, Queen, King, and Ace. This system will not shuffle the hidden card in BlackJack; that card will remain far left in the users hand</li>
+</ul>
+</li>
+<li>
+<p>_</p>
+<ul>
+<li>Name: hand_of_cards</li>
+<li>Type: functional</li>
+<li>Summary: The player's cards in hand. Using the mouse scroll wheel the player can scroll through cards in the user's hand</li>
+</ul>
+</li>
+<li>
+<p>_</p>
+<ul>
+<li>Name: display_cards</li>
+<li>Type: functional</li>
+<li>Summary: Displays the cards to the screen.</li>
+</ul>
+</li>
+<li>
+<p>_</p>
+<ul>
+<li>Name: cards_deal</li>
+<li>Type: functional</li>
+<li>Summary: Deals cards to players according to the rules of the games.</li>
+</ul>
+</li>
+<li>
+<p>_</p>
+<ul>
+<li>Name: play_cards</li>
+<li>Type: functional</li>
+<li>Summary: Players will be able to play cads.</li>
+</ul>
+</li>
+<li>
+<p>_</p>
+<ul>
+<li>Name: player_points</li>
+<li>Type: functional</li>
+<li>Summary: Points will be tracked and displayed to the players.</li>
+</ul>
+</li>
+<li>
+<p>_</p>
+<ul>
+<li>Name: player_notes</li>
+<li>Type: functional</li>
+<li>Summary: Players will be able to take notes during games.</li>
+</ul>
+</li>
+<li>
+<p>_</p>
+<ul>
+<li>Name: player_dealer</li>
+<li>Type: functional</li>
+<li>Summary: Certain games call for the leader and needs to be pointed out and the player given exclusive players</li>
+</ul>
+</li>
+<li>
+<p>_</p>
+<ul>
+<li>Name: turn_visual</li>
+<li>Type: functional</li>
+<li>Summary: A dark black indicator on the game board will point to the player whose turn it is. This indicator will rotate in turn in the direction of current play order to the next player. Repeat until end of game.</li>
+</ul>
+</li>
+<li>
+<p>_</p>
+<ul>
+<li>Name: player_bids</li>
+<li>Type: functional</li>
+<li>Summary: Players will be able to make bids appropiate to the game. Animate the chips going into the center pot when the user places a bet.</li>
+</ul>
+</li>
+</ol>
+<h3 id="specific-game-systems">Specific Game Systems</h3>
+<h4 id="blackjack">Blackjack</h4>
+<ol>
+<li>_
+<ul>
+<li>Name: table_cards_blackjack_display</li>
+<li>Type: functional</li>
+<li>Summary: A players blackjack hand should have 1 card face up when displayed on the table</li>
+</ul>
+</li>
+</ol>
+<h4 id="texas-hold-em">Texas Hold Em</h4>
+<ol>
+<li>
+<p>_</p>
+<ul>
+<li>Name: hold_em_display</li>
+<li>Type: functional</li>
+<li>Summary: display to the table the 3 first round cards, 1 second round, and the final card to the table when playing texholdem</li>
+</ul>
+</li>
+<li>
+<p>_</p>
+<ul>
+<li>Name: double_single_blind</li>
+<li>Type: functional</li>
+<li>Summary: display chip to the screen indicating who is paying blinds and double blinds. Then include them actually paying it.</li>
+</ul>
+</li>
+</ol>
+<h4 id="pedro">Pedro</h4>
+<ol>
+<li>_
+<ul>
+<li>Name: card_hierarchy</li>
+<li>Type: functional</li>
+<li>Summary: There will be a system in place that determines where the played cards lay in the hierarchy.</li>
+</ul>
+</li>
+</ol>
+<h4 id="mao">Mao</h4>
+<ol>
+<li>_
+<ul>
+<li>Name: random_rules</li>
+<li>Type: functional</li>
+<li>Summary: There will be a system to choose the rules randomly from a set of predetermined rules.</li>
+</ul>
+</li>
+</ol>
+
+</body>
+</html>
