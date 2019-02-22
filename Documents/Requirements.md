@@ -13,16 +13,17 @@
 
 ### Menu and interface
 
-#### General Screens
+#### User Interface
+
 1. _
     * Name: load_screen
     * Type: functional
     * Summary: There will be a simple load screen with a logo.
 
 2. _
-	* Name: login_screen
-	* Type: functional
-	* Summary: There will be a login screen for players.
+    * Name: login_screen
+    * Type: functional
+    * Summary: There will be a login screen for players.
 
 3. _
     * Name: home_screen
@@ -39,39 +40,42 @@
     * Type: functional
     * Summary: There will be a settings screen. Where users can custimize the cards, as well as some other settings.
 
-#### Accounts
+#### User Account System
+
 1. _
-	* Name: account_creation
-	* Type: functional
-	* Summary: Players will be able to creat an account.
+    * Name: account_creation
+    * Type: functional
+    * Summary: Players will be able to creat an account.
 
 2. _
-	* Name: account_login
-	* Type: functional
-	* Summary: Players will be able to login to a account.
+    * Name: account_login
+    * Type: functional
+    * Summary: Players will be able to login to a account.
 
 3. _
-	* Name: account_logout
-	* Type: functional
-	* Summary: Players will be able to logout of their account.
+    * Name: account_logout
+    * Type: functional
+    * Summary: Players will be able to logout of their account.
 
 4. _
-	* Name: account_career
-	* Type: functional
-	* Summary: Players will be able to track their career wins and total games with their accounts.
+    * Name: account_career
+    * Type: functional
+    * Summary: Players will be able to track their career wins and total games with their accounts.
 
 ### Network
+
 1. _
-	* Name: net_connect
-	* Type: risk
-	* Summary: The network may disallow any computers to connect to one another
+    * Name: net_connect
+    * Type: risk
+    * Summary: The network may disallow any computers to connect to one another
 
 2. _
-	* Name: net_keep_connect
-	* Type: risk
-	* Summary: The network may drop the player and we would have to deal with a non-reponsive connetection
+    * Name: net_keep_connect
+    * Type: risk
+    * Summary: The network may drop the player and we would have to deal with a non-reponsive connetection
 
 ### Lobby and social
+
 1. _
     * Name: lobby_system
     * Type: functional
@@ -88,25 +92,26 @@
     * Summary: Players can vote on what game to play with the plurality of the votes winning. Each vote lasts 30 seconds. A pop-up is displayed for the user to scroll through games and click to vote.
 
 4. _
-	* Name: kick_player
-	* Type: functional
-	* Summary: The game should kick the player that is slow to respond
+    * Name: kick_player
+    * Type: functional
+    * Summary: The game should kick the player that is slow to respond
 
 5. _
-	* Name: vote_kick_player
-	* Type: functional
-	* Summary: The players can raise a vote to kick a player that is being rude
+    * Name: vote_kick_player
+    * Type: functional
+    * Summary: The players can raise a vote to kick a player that is being rude
 
 6. _
-	* Name: player_chat
-	* Type: functional
-	* Summary: Players will be able to chat to eachother.
+    * Name: player_chat
+    * Type: functional
+    * Summary: Players will be able to chat to eachother.
 
 ### General game systems
+
 1. _
-	* Name: card_sort
-	* Type: functional
-	* Summary: The cards will be automatically sorted for the readabillity.
+    * Name: card_sort
+    * Type: functional
+    * Summary: The cards will be automatically sorted for the readabillity.
 
 2. _
     * Name: hand_of_cards
@@ -114,24 +119,24 @@
     * Summary: The player's cards in hand. Needs the ability to show cards to player. Auto-sorts the hand as cards come in.
 
 3. _
-	* Name: display_cards
-	* Type: functional
-	* Summary: Displays the cards to the screen.
+    * Name: display_cards
+    * Type: functional
+    * Summary: Displays the cards to the screen.
 
 4. _
-	* Name: cards_deal
-	* Type: functional
-	* Summary: Deals cards to players according to the rules of the games.
+    * Name: cards_deal
+    * Type: functional
+    * Summary: Deals cards to players according to the rules of the games.
 
 5. _
-	* Name: play_cards
-	* Type: functional
-	* Summary: Players will be able to play cads.
+    * Name: play_cards
+    * Type: functional
+    * Summary: Players will be able to play cads.
 
 6. _
-	* Name: player_points
-	* Type: functional
-	* Summary: Points will be tracked and displayed to the players.
+    * Name: player_points
+    * Type: functional
+    * Summary: Points will be tracked and displayed to the players.
 
 7. _
     * Name: player_notes
@@ -144,38 +149,41 @@
     * Summary: Certain games call for the leader and needs to be pointed out and the player given exclusive players
 
 9. _
-	* Name: turn_visual
-	* Type: functional
-	* Summary: Players will have their turns animated.
+    * Name: turn_visual
+    * Type: functional
+    * Summary: Players will have their turns animated.
 
 10. _
-	* Name: player_bids
-	* Type: functional
-	* Summary: allows the players to make bids appropiate to the game. animate chips going into the center pot when the user places a bet.
+    * Name: player_bids
+    * Type: functional
+    * Summary: allows sthe players to make bids appropiate to the game. animate chips going into the center pot when the user places a bet.
 
 ### Specific Game Systems
+
 #### Blackjack
+
 1. _
-	* Name: table_cards_blackjack_display
-	* Type: functional
-	* Summary: A players blackjack hand should have 1 card face up when displayed on the table
+    * Name: table_cards_blackjack_display
+    * Type: functional
+    * Summary: A players blackjack hand should have 1 card face up when displayed on the table
 
 #### Texas Hold Em
+
 1. _
-	* Name: hold_em_display
-	* Type: functional
-	* Summary: display to the table the 3 first round cards, 1 second round, and the final card to the table when playing texholdem
+    * Name: hold_em_display
+    * Type: functional
+    * Summary: display to the table the 3 first round cards, 1 second round, and the final card to the table when playing texholdem
 
 2. _
-	* Name: double_single_blind
-	* Type: functional
-	* Summary: display chip to the screen indicating who is paying blinds and double blinds. Then include them actually paying it.
+    * Name: double_single_blind
+    * Type: functional
+    * Summary: display chip to the screen indicating who is paying blinds and double blinds. Then include them actually paying it.
 
 #### Pedro
+
 #### Mao
+
 1. _
-	* Name: random_rules
-	* Type: functional
-	* Summary: design a system of a set of rules randomly assigned to random cards
-
-
+    * Name: random_rules
+    * Type: functional
+    * Summary: design a system of a set of rules randomly assigned to random cards
