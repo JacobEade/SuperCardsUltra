@@ -7,7 +7,7 @@
 
 ## Purpose
 
-* SuperCardsUltra will allow users to play card games with their friends. The Card games that will be implemented are Blackjack, Texas Hold Em, Pedro and Mao.
+* SuperCardsUltra will allow users to play card games with their friends. The Card games that will be implemented are Blackjack, Texas Hold Em, Pedro, and Mao.
 
 ## Requirements
 
