@@ -8,6 +8,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documents", "Documents", "{94C151D4-7DB1-48CD-837C-FF116991DAAF}"
 	ProjectSection(SolutionItems) = preProject
 		Documents\Requirements.md = Documents\Requirements.md
+		Documents\scenarios.md = Documents\scenarios.md
 	EndProjectSection
 EndProject
 Global

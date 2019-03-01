@@ -1,0 +1,4 @@
+# SuperCardsUltra Scenarios
+
+1. _
+	Four friends decide they want to play a card game. They all launch SuperCardsUltra and try to connect to a lobby. They realize that they are unable to connect because they are not on a LAN connection. They then download a third-party VPN software, such as LogMeIn Hamachi, to extend a LAN connection to all of them, and try to join a lobby again.
