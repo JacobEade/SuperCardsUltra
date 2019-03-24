@@ -11,6 +11,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documents", "Documents", "{
 		Documents\scenarios.md = Documents\scenarios.md
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SuperCardsLib", "SuperCardsLib\SuperCardsLib.csproj", "{B1D9E024-465C-4D3A-9912-C594B3B36EA8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{AA0A802C-3FC4-4B49-9E56-A19E4795C63A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AA0A802C-3FC4-4B49-9E56-A19E4795C63A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AA0A802C-3FC4-4B49-9E56-A19E4795C63A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B1D9E024-465C-4D3A-9912-C594B3B36EA8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1D9E024-465C-4D3A-9912-C594B3B36EA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1D9E024-465C-4D3A-9912-C594B3B36EA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1D9E024-465C-4D3A-9912-C594B3B36EA8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
