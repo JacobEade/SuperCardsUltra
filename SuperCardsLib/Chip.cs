@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace SuperCardsLib
 {
-    public class Class1
+    class Chip : Viewable
     {
+        public List<string> GetImageName()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
