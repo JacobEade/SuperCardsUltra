@@ -15,9 +15,9 @@ namespace SuperCardsLib
 
         public string Image { get; private set; }
 
-        public List<string> GetImageName()
+        public List<string> GetImageNames()
         {
-            throw new NotImplementedException();
+            return new List<string> {Image };
         }
     }
 }
