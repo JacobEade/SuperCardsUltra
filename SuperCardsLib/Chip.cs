@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 namespace SuperCardsLib
 {
@@ -15,9 +11,9 @@ namespace SuperCardsLib
 
         public string Image { get; private set; }
 
-        public List<string> GetImageName()
+        public List<string> GetImageNames()
         {
-            throw new NotImplementedException();
+            return new List<string> {Image };
         }
     }
 }

@@ -8,6 +8,6 @@ namespace SuperCardsLib
 {
     interface Viewable
     {
-        List<string> GetImageName();
+        List<string> GetImageNames();
     }
 }
