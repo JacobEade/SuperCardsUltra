@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace SuperCardsLib
 {
-    public class Table
+    public class Table :Viewable
     {
         private List<Player> _players;
         private List<Card> _deck;
@@ -49,6 +49,15 @@ namespace SuperCardsLib
             _deck.RemoveAt(cardIndex);
             return card;
         }
-        
+
+        public List<string> GetImageNames()
+        {
+            List<string> images = new List<string>();
+            foreach (Card card in _deck)
+            {
+                images.AddRange(card.GetImageNames());
+            }
+            return images;
+        }
     }
 }
