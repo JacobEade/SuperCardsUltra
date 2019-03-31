@@ -44,7 +44,7 @@ namespace SuperCardsLib
                 }
             }
         }
-        internal Card Draw()
+        protected Card Draw()
         {
             int cardIndex = drawer.Next(_deck.Count + 1);
             Card card =
