@@ -4,15 +4,16 @@ namespace SuperCardsLib
 {
     
     public enum CardSuit { Spades, Clubs, Hearts, Diamonds};
+    public enum CardFace { Ace, Two, Three, Four, Five, Six, Seven, Eight, Nine, Ten, Jack, Queen, King}
     public class Card:Viewable
     {
-        public Card(int value, CardSuit suit)
+        public Card(CardFace face, CardSuit suit)
         {
-            Value = value;
+            Face = face;
             Suit = suit;
-            Image = Value + Suit + ".jpg";
+            Image = Face.ToString() + Suit + ".jpg";
         }
-        public int Value {
+        public CardFace Face {
             get;
             private set;
         }
@@ -25,7 +26,7 @@ namespace SuperCardsLib
             private set;
         }
 
-        public List<string> GetImageNames()
+        public List<string> GetImageNames()//do we really need this or just use the getter for image???
         {
             return new List<string> { Image };
         }

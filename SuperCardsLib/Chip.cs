@@ -2,7 +2,7 @@
 
 namespace SuperCardsLib
 {
-    public class Chip : Viewable
+    abstract public class Chip : Viewable
     {
         public Chip(string image)
         {
@@ -14,7 +14,7 @@ namespace SuperCardsLib
             private set;
         }
 
-        public List<string> GetImageNames()
+        public List<string> GetImageNames()//do we really need this or just use the getter for image???
         {
             return new List<string> {Image };
         }

@@ -5,7 +5,7 @@ namespace SuperCardsLib
 {
     public class Player
     {
-        List<Card> hand;
+        private List<Card> hand;
         public Player(string username,int wins, int losses)
         {
             Username = username;
@@ -30,7 +30,7 @@ namespace SuperCardsLib
             {
                 return null;
             }
-            else if(cardIndex < 0 || cardIndex == hand.Count)
+            else if(cardIndex < 0 || cardIndex <= hand.Count)
             {
                 throw new ArgumentOutOfRangeException("invalid hand index");
             }

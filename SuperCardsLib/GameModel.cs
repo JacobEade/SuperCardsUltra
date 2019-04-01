@@ -18,7 +18,7 @@ namespace SuperCardsLib
             get;
             private set;
         }
-        public List<string> GetImageNames()
+        public List<string> GetImageNames()// change to a method instead of an interface
         {
             return Table.GetImageNames();
         }
