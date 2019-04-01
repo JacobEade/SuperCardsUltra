@@ -63,7 +63,7 @@ namespace SuperCardsLib
         {
             int cardIndex = drawer.Next(_deck.Count + 1);
             Card card =
-                _deck[drawer.Next(cardIndex)];
+                _deck[cardIndex];
             _deck.RemoveAt(cardIndex);
             return card;
         }
