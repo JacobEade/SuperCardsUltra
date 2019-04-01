@@ -44,7 +44,9 @@
     <Compile Include="Chip.cs" />
     <Compile Include="GameModel.cs" />
     <Compile Include="MoneyChip.cs" />
+    <Compile Include="MoneyPlayer.cs" />
     <Compile Include="Player.cs" />
+    <Compile Include="PointPlayer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Table.cs" />
     <Compile Include="TrackerChip.cs" />

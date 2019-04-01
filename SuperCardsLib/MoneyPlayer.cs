@@ -1,22 +1,17 @@
-﻿using System.Collections.Generic;
-
-namespace SuperCardsLib
+﻿namespace SuperCardsLib
 {
     public class MoneyPlayer : Player
     {
-        string username;
-        int wins;
-        int losses;
-        Money money;
-        List<Card> hand; // Do I need this? - Harrison
 
-        public MoneyPlayer(string username,int wins, int losses, Money money)
+        public MoneyPlayer(string username, int wins, int losses, MoneyChip money)
+            : base(username, wins,losses)
         {
-            this.username = username;
-            this.wins = wins;
-            this.losses = losses;
-            this.money = money;
-            hand = new List<Card>();
+            Money = money;
+        }
+
+        public MoneyChip Money {
+            get;
+            private set;
         }
     }
 }
