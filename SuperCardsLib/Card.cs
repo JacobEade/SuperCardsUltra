@@ -2,6 +2,7 @@
 
 namespace SuperCardsLib
 {
+    
     public enum CardSuit { Spades, Clubs, Hearts, Diamonds};
     public class Card:Viewable
     {
