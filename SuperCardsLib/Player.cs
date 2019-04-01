@@ -13,8 +13,21 @@ namespace SuperCardsLib
             Losses = losses;
         }
 
-        public int Losses { get; private set; }
-        public string Username { get; private set; }
-        public int Wins { get; private set; }
+        public int Losses {
+            get;
+            private set;
+        }
+
+
+        public string Username {
+            get;
+            private set;
+        }
+
+
+        public int Wins {
+            get;
+            private set;
+        }
     }
 }
