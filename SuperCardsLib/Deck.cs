@@ -8,6 +8,7 @@ namespace SuperCardsLib
 {
     public class Deck : Viewable
     {
+        public const int NUMBER_OF_SHUFFLES = 3;
         private List<Card> _deck;
         /// <summary>Instance variable <c>drawer</c> 
         ///     represents ... </summary>
@@ -16,6 +17,7 @@ namespace SuperCardsLib
         public Deck()//needs updated to use the enum for face and moved to new class
         {
             _deck = new List<Card>();
+            dealer = new Random();
             CardSuit suit;
             CardFace face;
             for (int i = 0; i < 4; i++)
@@ -27,8 +29,23 @@ namespace SuperCardsLib
                     _deck.Add(new Card(face, suit));
                 }
             }
+            Shuffle();
         }
-
+        private void Shuffle()
+        {
+            Card tmp;
+            int swapIndex;
+            for (int i = 0; i<NUMBER_OF_SHUFFLES; i++)
+            {
+                for (int k = 0; k < _deck.Count; k++)
+                {
+                    tmp = _deck[k];
+                    swapIndex = dealer.Next(_deck.Count - 1);
+                    _deck[k] = _deck[swapIndex];
+                    _deck[swapIndex] = tmp;
+                }
+            }
+        }
         private static CardSuit SelectSuit(int i)
         {
             CardSuit suit;
@@ -107,13 +124,30 @@ namespace SuperCardsLib
         }
 
         /// <summary>method <c>Draw</c> deals a card</summary>
-        protected Card Deal()
+        public Card Deal()
         {
-            int cardIndex = dealer.Next(_deck.Count + 1);
-            Card card =
-                _deck[cardIndex];
-            _deck.RemoveAt(cardIndex);
+            if (_deck == null)
+            {
+                throw new ArgumentNullException
+                    ("deck was never created");
+            }
+            else if (_deck.Count == 0)
+            {
+                throw new ArgumentOutOfRangeException
+                    ("deck has no more cards");
+            }
+            Card card = _deck[0];
+            _deck.RemoveAt(0);
             return card;
+        }
+        public List<Card> Deal(int numberOfCards)
+        {
+            List<Card> cards = new List<Card>();
+            for (int i = 0; i < numberOfCards; i++)
+            {
+                cards.Add(Deal());
+            }
+            return cards;
         }
         public List<string> GetImageNames()
         {
