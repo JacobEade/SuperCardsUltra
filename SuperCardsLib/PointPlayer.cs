@@ -1,22 +1,16 @@
-﻿using System.Collections.Generic;
-
-namespace SuperCardsLib
+﻿namespace SuperCardsLib
 {
     public class PointPlayer : Player
     {
-        string username;
-        int wins;
-        int losses;
-        int points;
-        List<Card> hand; // Do I need this? - Harrison
-
         public PointPlayer(string username,int wins, int losses, int points)
+            : base(username, wins, losses)
         {
-            this.username = username;
-            this.wins = wins;
-            this.losses = losses;
-            this.points = points;
-            hand = new List<Card>();
+            Points = points;
+        }
+
+        public int Points {
+            get;
+            private set;
         }
     }
 }

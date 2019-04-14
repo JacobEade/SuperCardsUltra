@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace SuperCardsLib
 {
-    class GameModel : Viewable
+    public class GameModel : Viewable
     {
         public GameModel(Table table)
         {
@@ -14,8 +14,11 @@ namespace SuperCardsLib
             }
             Table = table;
         }
-        public Table Table { get; private set; }
-        public List<string> GetImageNames()
+        public Table Table {
+            get;
+            private set;
+        }
+        public List<string> GetImageNames()// change to a method instead of an interface
         {
             return Table.GetImageNames();
         }
