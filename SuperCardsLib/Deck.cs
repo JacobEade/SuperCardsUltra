@@ -53,7 +53,7 @@ namespace SuperCardsLib
             }
         }
 
-        // Function: SelectSuit = 
+        // Function: SelectSuit - gets suit from an index value
         private static CardSuit SelectSuit(int i)
         {
             CardSuit suit;
@@ -79,6 +79,7 @@ namespace SuperCardsLib
             return suit;
         }
 
+        // Function: SelectFace - get face from index
         private static CardFace SelectFace(int k)
         {
             CardFace face;
@@ -131,7 +132,7 @@ namespace SuperCardsLib
             return face;
         }
 
-        /// <summary>method <c>Draw</c> deals a card</summary>
+        /// Function: Deal - deals a card
         public Card Deal()
         {
             if (_deck == null)
@@ -148,15 +149,19 @@ namespace SuperCardsLib
             _deck.RemoveAt(0);
             return card;
         }
+        // Function: Deal - deals a number of cards
         public List<Card> Deal(int numberOfCards)
         {
             List<Card> cards = new List<Card>();
             for (int i = 0; i < numberOfCards; i++)
             {
+                // reuse the deal function
                 cards.Add(Deal());
             }
             return cards;
         }
+
+        // Function: GetImageNames - Get the list of Image names 
         public List<string> GetImageNames()
         {
             throw new NotImplementedException();
