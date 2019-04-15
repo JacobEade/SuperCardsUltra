@@ -3,6 +3,7 @@ using System;
 
 namespace SuperCardsLib
 {
+    // Class: Player - the player doing the card games
     public class Player
     {
         private List<Card> hand;
@@ -41,18 +42,20 @@ namespace SuperCardsLib
                 return card;
             }
         }
+
+        // Constructor: Losses - the player Losses
         public int Losses {
             get;
             private set;
         }
 
-
+        // Constructor: Username - the player name
         public string Username {
             get;
             private set;
         }
 
-
+        // Constructor: Wins - the player Wins
         public int Wins {
             get;
             private set;
