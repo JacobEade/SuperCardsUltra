@@ -6,9 +6,13 @@ using System.Threading.Tasks;
 
 namespace SuperCardsLib
 {
+    // Class: Deck - controls the deck of cards
     public class Deck : Viewable
-    {
+    {   
+        // Constant: NUMBER_OF_SHUFFLES - represents the number of shuffles
         public const int NUMBER_OF_SHUFFLES = 3;
+
+        // Private Member Variable: _deck - Object for the deck of cards
         private List<Card> _deck;
         /// <summary>Instance variable <c>drawer</c> 
         ///     represents ... </summary>
@@ -31,6 +35,8 @@ namespace SuperCardsLib
             }
             Shuffle();
         }
+
+        // Function: Shuffle - shuffles the deck of cards object
         private void Shuffle()
         {
             Card tmp;
@@ -46,6 +52,8 @@ namespace SuperCardsLib
                 }
             }
         }
+
+        // Function: SelectSuit = 
         private static CardSuit SelectSuit(int i)
         {
             CardSuit suit;
