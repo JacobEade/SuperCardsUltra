@@ -48,6 +48,7 @@
     <Compile Include="Money.cs" />
     <Compile Include="MoneyPlayer.cs" />
     <Compile Include="PedroTable.cs" />
+    <Compile Include="PedroTeam.cs" />
     <Compile Include="Player.cs" />
     <Compile Include="PointPlayer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
