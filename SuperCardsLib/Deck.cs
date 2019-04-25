@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace SuperCardsLib
 {
     // Class: Deck - controls the deck of cards
-    public class Deck : Viewable
+    public class Deck
     {   
         // Constant: NUMBER_OF_SHUFFLES - represents the number of shuffles
         public const int NUMBER_OF_SHUFFLES = 3;
@@ -159,12 +159,6 @@ namespace SuperCardsLib
                 cards.Add(Deal());
             }
             return cards;
-        }
-
-        // Function: GetImageNames - Get the list of Image names 
-        public List<string> GetImageNames()
-        {
-            throw new NotImplementedException();
         }
     }
 }

@@ -43,19 +43,19 @@ namespace SuperCardsLib
             }
         }
 
-        // Constructor: Losses - the player Losses
+        // Property: Losses - the player Losses
         public int Losses {
             get;
             private set;
         }
 
-        // Constructor: Username - the player name
+        // Property: Username - the player name
         public string Username {
             get;
             private set;
         }
 
-        // Constructor: Wins - the player Wins
+        // Property: Wins - the player Wins
         public int Wins {
             get;
             private set;

@@ -4,7 +4,7 @@ using System.Collections.Generic;
 namespace SuperCardsLib
 {
     // Class: GameModel - Base class for all games
-    public class GameModel : Viewable
+    public class GameModel
     {
         // Constructor: GameModel build a GameModel from a table
         public GameModel(Table table)

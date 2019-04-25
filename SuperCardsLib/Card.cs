@@ -8,7 +8,7 @@ namespace SuperCardsLib
     public enum CardFace { Ace, Two, Three, Four, Five, Six, Seven, Eight, Nine, Ten, Jack, Queen, King}
     
     // class to hold the card
-    public class Card:Viewable
+    public class Card
     {
         // Constructor for a Card
         public Card(CardFace face, CardSuit suit)
@@ -17,26 +17,20 @@ namespace SuperCardsLib
             Suit = suit;
             Image = Face.ToString() + Suit + ".jpg";
         }
-        // Constructor for Faces
+        // Property for Faces
         public CardFace Face {
             get;
             private set;
         }
-        // Constructor for Images
+        // Property for Images
         public string Image {
             get;
             private set;
         }
-        // Constructor for Suit of a card
+        // Property for Suit of a card
         public CardSuit Suit {
             get;
             private set;
-        }
-        
-        // GetImageNames method to return the image names
-        public List<string> GetImageNames() //do we really need this or just use the getter for image???
-        {
-            return new List<string> { Image };
         }
     }
 }

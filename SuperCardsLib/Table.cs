@@ -6,7 +6,7 @@ namespace SuperCardsLib
     /// <summary>Class <c>Table</c> 
     ///     models a table for the game being played</summary>
     ///
-    public class Table : Viewable
+    public class Table
     {
         /// <summary>Instance variable <c>_players</c> 
         ///     represents the point's x-coordinate.</summary>
@@ -22,15 +22,6 @@ namespace SuperCardsLib
         {
             _players = players;
             _deck = new Deck();
-        }
-
-       
-
-        /// <summary>method <c>GetImageNames</c> gets the image names
-        ///     from the deck</summary>
-        public List<string> GetImageNames()//is this needed
-        {
-            return _deck.GetImageNames();
         }
     }
 }
