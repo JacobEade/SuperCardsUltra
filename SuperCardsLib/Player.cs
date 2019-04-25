@@ -42,6 +42,21 @@ namespace SuperCardsLib
                 return card;
             }
         }
+        public void Draw(Card card)
+        {
+            if (hand == null)
+            {
+                throw new ArgumentNullException("hand was never made to draw to");
+            }
+            hand.Add(card);
+        }
+        public void Draw(List<Card> cards)
+        {
+            foreach(Card card in cards)
+            {
+                Draw(card);
+            }
+        }
 
         // Property: Losses - the player Losses
         public int Losses {

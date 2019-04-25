@@ -22,11 +22,5 @@ namespace SuperCardsLib
             get;
             private set;
         }
-
-        // Function: GetImageNames - get the image names from the table
-        public List<string> GetImageNames()// change to a method instead of an interface
-        {
-            return Table.GetImageNames();
-        }
     }
 }

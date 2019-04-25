@@ -23,5 +23,9 @@ namespace SuperCardsLib
             _players = players;
             _deck = new Deck();
         }
+        public Deck GetDeck()
+        {
+            return _deck;
+        }
     }
 }

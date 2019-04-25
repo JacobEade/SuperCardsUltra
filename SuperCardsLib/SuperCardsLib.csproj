@@ -47,6 +47,7 @@
     <Compile Include="MoneyChip.cs" />
     <Compile Include="Money.cs" />
     <Compile Include="MoneyPlayer.cs" />
+    <Compile Include="PedroModel.cs" />
     <Compile Include="PedroTable.cs" />
     <Compile Include="PedroTeam.cs" />
     <Compile Include="Player.cs" />
