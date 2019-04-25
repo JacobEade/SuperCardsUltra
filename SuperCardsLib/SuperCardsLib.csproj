@@ -47,7 +47,6 @@
     <Compile Include="MoneyChip.cs" />
     <Compile Include="Money.cs" />
     <Compile Include="MoneyPlayer.cs" />
-    <Compile Include="PointPlayer.cs" />
     <Compile Include="Player.cs" />
     <Compile Include="PointPlayer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
