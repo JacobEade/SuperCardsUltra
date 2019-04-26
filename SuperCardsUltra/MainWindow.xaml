@@ -7,6 +7,8 @@
         mc:Ignorable="d"
         Title="SuperCardsUltra" Height="350" Width="525">
     <Grid>
+
+      <!--<Label Text="Welcome to Xamarin Forms!"/> -->
         
     </Grid>
 </Window>
