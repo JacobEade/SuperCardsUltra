@@ -9,7 +9,7 @@
             Value = value;
         }
 
-        // Constructor: Value - 
+        // Property: Value - 
         public int Value {
             get;
             private set;

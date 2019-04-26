@@ -47,12 +47,14 @@
     <Compile Include="MoneyChip.cs" />
     <Compile Include="Money.cs" />
     <Compile Include="MoneyPlayer.cs" />
+    <Compile Include="PedroModel.cs" />
+    <Compile Include="PedroTable.cs" />
+    <Compile Include="PedroTeam.cs" />
     <Compile Include="Player.cs" />
     <Compile Include="PointPlayer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Table.cs" />
     <Compile Include="TrackerChip.cs" />
-    <Compile Include="Viewable.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -11,7 +11,7 @@
             Money = money;
         }
 
-        // Constructor: Money - 
+        // Property: Money - 
         public MoneyChip Money {
             get;
             private set;
