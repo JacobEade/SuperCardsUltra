@@ -7,12 +7,12 @@ namespace SuperCardsLib
     public class Player
     {
         private List<Card> hand;
-        public Player(string username,int wins, int losses)
+        public Player(string username)
         {
             Username = username;
             hand = new List<Card>();
-            Wins = wins;
-            Losses = losses;
+            //Wins = wins;not implemented
+            //Losses = losses;not implemented
         }
         /// <summary>
         /// Plays a card from the players hand to the table
@@ -57,23 +57,37 @@ namespace SuperCardsLib
                 Draw(card);
             }
         }
-
-        // Property: Losses - the player Losses
-        public int Losses {
-            get;
-            private set;
-        }
-
         // Property: Username - the player name
-        public string Username {
+        public string Username
+        {
             get;
             private set;
         }
 
-        // Property: Wins - the player Wins
-        public int Wins {
-            get;
-            private set;
+        public List<Card> Hand
+        {
+            get
+            {
+                return hand;
+            }
+
+            set
+            {
+                hand = value;
+            }
         }
+
+
+
+        //// Property: Losses - the player Losses
+        //public int Losses {
+        //    get;
+        //    private set;
+        //}
+        // Property: Wins - the player Wins
+        //public int Wins {
+        //    get;
+        //    private set;not implemented
+        //}
     }
 }

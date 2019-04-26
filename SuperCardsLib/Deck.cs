@@ -152,6 +152,10 @@ namespace SuperCardsLib
         // Function: Deal - deals a number of cards
         public List<Card> Deal(int numberOfCards)
         {
+            if (numberOfCards < 0)
+            {
+                return new List<Card>();
+            }
             List<Card> cards = new List<Card>();
             for (int i = 0; i < numberOfCards; i++)
             {
