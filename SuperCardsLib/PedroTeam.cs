@@ -52,6 +52,9 @@ namespace SuperCardsLib
             {
                 Points += PointsCollectedThisHand;
             }
+            CardsWon = new List<Card>();
+            PointsCollectedThisHand = 0;
         }
+        
     }
 }

@@ -5,8 +5,8 @@
     {
 
         // Construor : MoneyPlayer - for a username, wins, losses, and money
-        public MoneyPlayer(string username, int wins, int losses, MoneyChip money)
-            : base(username, wins,losses)
+        public MoneyPlayer(string username,MoneyChip money)
+            : base(username)
         {
             Money = money;
         }
