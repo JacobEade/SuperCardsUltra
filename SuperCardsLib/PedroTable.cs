@@ -51,7 +51,7 @@ namespace SuperCardsLib
             CardSuit roundSuit = ChooseSuit(highestBidderIndex);//temperary until ui
             DiscardAllOffSuits(roundSuit);
             RefillHands();
-            PlayHand();
+            PlayHand(highestBidderIndex);
             team1.AddPoints();
             team2.AddPoints();
             PedroTeam winningTeam = new PedroTeam();
